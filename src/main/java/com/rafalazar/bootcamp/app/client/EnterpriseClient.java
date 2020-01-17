@@ -5,7 +5,7 @@ import java.util.Collections;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+//import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.BodyInserters;
@@ -21,7 +21,6 @@ public class EnterpriseClient {
 	private static final Logger log = LoggerFactory.getLogger(EnterpriseClient.class);
 
 	@Autowired
-	@Qualifier("enterprise")
 	private WebClient eclient;
 
 	// Listamos todos los clientes Empresariales

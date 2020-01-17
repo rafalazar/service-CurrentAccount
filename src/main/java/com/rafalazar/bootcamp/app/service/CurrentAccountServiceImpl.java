@@ -48,18 +48,18 @@ public class CurrentAccountServiceImpl implements CurrentAccountService{
 		return repo.delete(current);
 	}
 
-	@Override
-	public Mono<CurrentAccount> findByNumAccount(String numAccount) {
-		return repo.findByNumberAccount(numAccount);
-	}
-
-	@Override
-	public Flux<CurrentAccount> findByDni(String dni) {
-		return repo.findByDni(dni);
-	}
+//	@Override
+//	public Mono<CurrentAccount> findByNumAccount(String numAccount) {
+//		return repo.findByNumberAccount(numAccount);
+//	}
+//
+//	@Override
+//	public Flux<CurrentAccount> findByDni(String dni) {
+//		return repo.findByDni(dni);
+//	}
 
 	//Guardamos el cliente personal
-	//@Override
+//	@Override
 //	public Mono<CurrentAccount> savePersonal(AccountDto accountDto) {
 //		
 //		return pclient.findByDni(accountDto.getNumberAccount())
@@ -74,15 +74,15 @@ public class CurrentAccountServiceImpl implements CurrentAccountService{
 //	}
 
 	//Guardamos el cliente empresarial
-	@Override
-	public Mono<CurrentAccount> saveEnterprise(AccountDto accountDto) {
-		return null;
-	}
-
-	@Override
-	public Mono<CurrentAccount> savePersonal(AccountDto accountDto) {
-		// TODO Auto-generated method stub
-		return null;
-	}
+//	@Override
+//	public Mono<CurrentAccount> saveEnterprise(AccountDto accountDto) {
+//		return null;
+//	}
+//
+//	@Override
+//	public Mono<CurrentAccount> savePersonal(AccountDto accountDto) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 
 }

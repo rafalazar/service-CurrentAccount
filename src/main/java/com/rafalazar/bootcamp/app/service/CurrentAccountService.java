@@ -17,13 +17,13 @@ public interface CurrentAccountService {
 	public Mono<Void> delete(CurrentAccount current);
 	
 	//------------->
-	public Mono<CurrentAccount> savePersonal(AccountDto accountDto);
-	public Mono<CurrentAccount> saveEnterprise(AccountDto accountDto);
+//	public Mono<CurrentAccount> savePersonal(AccountDto accountDto);
+//	public Mono<CurrentAccount> saveEnterprise(AccountDto accountDto);
 	
 	//------------->
-	
-	public Mono<CurrentAccount> findByNumAccount(String numAccount);
-	
-	public Flux<CurrentAccount> findByDni(String dni);
+//	
+//	public Mono<CurrentAccount> findByNumAccount(String numAccount);
+//	
+//	public Flux<CurrentAccount> findByDni(String dni);
 
 }

@@ -9,11 +9,11 @@ import reactor.core.publisher.Mono;
 
 public interface CurrentAccountRepository extends ReactiveMongoRepository<CurrentAccount, String>{
 	//Buscamos por dni y nombre de banco
-	public Flux<CurrentAccount> findByDniBankName(String dni, String bankName);
-	
-	//Buscamos por número de cuenta.
-	public Mono<CurrentAccount> findByNumberAccount(String numAccount);
-	
-	//Buscamos por dni
-	public Flux<CurrentAccount> findByDni(String dni);
+//	public Flux<CurrentAccount> findByDniBankName(String dni, String bankName);
+//	
+//	//Buscamos por número de cuenta.
+//	public Mono<CurrentAccount> findByNumberAccount(String numAccount);
+//	
+//	//Buscamos por dni
+//	public Flux<CurrentAccount> findByDni(String dni);
 }
